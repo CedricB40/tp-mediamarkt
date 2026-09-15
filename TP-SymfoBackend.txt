@@ -1,0 +1,74 @@
+.env à modifier pour la database
+
+symfony console doctrine:database:create
+
+user entity
+
+$ symfony console make:user
+
+$ composer require symfony/maker-bundle --dev
+$ composer require security
+$ composer require orm
+
+symfony console make:entity User
+
+ajouter les champs : nom, prenom, adresse, argent
+
+symfony console make:entity Tv
+
+ajouter les champs demandé
+
+symfony console make:entity Smartphone
+
+ajouter les champs demandé
+===========================
+
+
+pour les relations
+
+symfony console make:entity User
+
+ajouter les relations ManyToMany 
+
+=============================
+
+
+pour api plateforme
+
+composer require api
+
+
+use ApiPlatform\Metadata\ApiResource;
+
+#[ApiResource] 
+
+a ajouter sur les 3 entité
+
+
+Symfony console c:c 
+
+pour vider le cache 
+
+relancer le serveur
+
+et aller verifier /api (https://127.0.0.1:8000/api)
+
+=================================
+
+symfony console security:hash-password
+
+
+=================================
+vérification avec newman
+
+créé le json de la collection
+
+npm install -g Newman
+
+mkdir postman (coller le json de Postman dedans)
+
+newman run ./postman/TP_MediaMarkt.postman_collection.json -k
+
+(-k pour le disable le SSL)
+
+
