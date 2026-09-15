@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 15 sep. 2026 à 20:42
+-- Généré le : mar. 15 sep. 2026 à 21:06
 -- Version du serveur : 8.4.7
 -- Version de PHP : 8.4.15
 
@@ -60,16 +60,7 @@ CREATE TABLE IF NOT EXISTS `smartphones` (
   `prix` double NOT NULL,
   `stock` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Déchargement des données de la table `smartphones`
---
-
-INSERT INTO `smartphones` (`id`, `nom`, `marque`, `description`, `annee`, `duo_carte_sim`, `image`, `prix`, `stock`) VALUES
-(1, 'iPhone 11 Pro Max', 'Apple', 'Écran Super Retina XDR 6,5 pouces, triple caméra 12MP, puce A13 Bionic, résistance à l\'eau.', 2019, 1, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTp8xcRi_0NV-M1z1bUP8AUfFbKEr5wm7TUMF3ncSHGg&s=10', 1159, 5),
-(2, 'Galaxy S20+', 'Samsung', 'Écran AMOLED 6,7 pouces 120Hz, processeur Exynos 990, quadruple caméra, compatible 5G.', 2020, 1, 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ1noseuNW9I4ks1rUM0F1eIq2gLSxjU9n8Jcplpq3ONrnin0rsgNQQ1CABHi2kdJIgOurNraVDM85rJ50gafMhkCEnGxUYrwFLhVc78pwE5P-FBZSGpXqe-gn02o6rnD1HpheNenw&usqp=CAc', 1009, 10),
-(5, 'OnePlus Nord', 'OnePlus', 'Écran Super AMOLED 90Hz 6,44 pouces, Snapdragon 765G, quadruple caméra, charge rapide Warp Charge 30T.', 2020, 1, 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTVyiK9t9zlHbbJbR6NjOX016z4C_wC0BBiv4JL2R2cFXV9et-lviQas39mjvrbpOxDrNe_U-qxwQE0r32LuDQcVnsEfsUnzfvNFP4kiqcibVarSoMCyYBtT-GO-vM0RGeOjMADbAo&usqp=CAc', 399, 2);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -89,17 +80,7 @@ CREATE TABLE IF NOT EXISTS `tvs` (
   `prix` double NOT NULL,
   `stock` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Déchargement des données de la table `tvs`
---
-
-INSERT INTO `tvs` (`id`, `nom`, `marque`, `description`, `annee`, `taille`, `image`, `prix`, `stock`) VALUES
-(3, 'LG C2', 'LG', 'Téléviseur OLED evo 4K avec processeur α9 Gen5 AI, plus lumineux que le C1, HDR10, Dolby Vision, 120Hz, HDMI 2.1.', 2022, 55, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZD95Qn0XEkAIu_lqOjzbzpXF_6DDZxGiHBPR47Kovw&s', 1799, 5),
-(4, 'Sony Bravia 8', 'Sony', 'Téléviseur OLED 4K avec processeur XR, Dolby Vision, 120Hz, fonctions exclusives PlayStation 5, Google TV.', 2024, 55, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0kSWmln7pAibsFmkwgYc1XLioSQtUNyJZj45ibndjbg&s=10', 1799, 10),
-(5, 'Philips OLED910', 'Philips', 'Téléviseur OLED 4K avec technologie Ambilight, système audio Bowers & Wilkins, compatible tous formats HDR.', 2025, 55, 'https://www.electrodepot.be/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/P10014689.jpg', 1399, 7),
-(6, 'Samsung S95D', 'Samsung', 'Téléviseur QD-OLED 4K anti-reflet (Glare Free), processeur NQ4 AI Gen2, Dolby Atmos, Motion Xcelerator 144Hz.', 2024, 77, 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSXT3rQzbzqJN3QY3fe_yb2Njd7UruSxQlFF2wjv3cZYsJDFp9yV78woCqpssAWaB9tEkEkioD8feMbSSb3OowM76HxCRuV09c6x3LtrlCNyGrlLadwl47zqDN3L_uvaQ&usqp=CAc', 4499, 3);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -119,16 +100,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `argent` double NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_IDENTIFIER_EMAIL` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Déchargement des données de la table `users`
---
-
-INSERT INTO `users` (`id`, `email`, `roles`, `password`, `nom`, `prenom`, `adresse`, `argent`) VALUES
-(1, 'nathalie@user.com', '[]', '$2y$13$NQUJK8DYwg2jHR609jcdhOof.WoZwkPQ6a0e4BVvCZfzj7QvS45c', 'Bond', 'James', 'Rue de Londres n°7, 2000', 10000),
-(2, 'kevin@user.com', '[]', '$2y$13$UzXuhHeYZJCNSG/PbCNz/OCMRgpTbuPkr.cC1APuJTkITYzpRSYSm', 'DeBruyne', 'Kevin', 'Avenue des Citiziens n°14, 3000', 10000),
-(3, 'margot@user.com', '[]', '$2y$13$or1Vxs1huMaerTYCqoMg2OTJBs5FxMzXOfst/TI0eNxUXXbq5cx0u', 'Robbie', 'Margot', 'Chaussée de Barbies n°423, 2500', 10000);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -145,16 +117,6 @@ CREATE TABLE IF NOT EXISTS `user_smartphone` (
   KEY `IDX_81D7B8C22E4F4908` (`smartphone_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Déchargement des données de la table `user_smartphone`
---
-
-INSERT INTO `user_smartphone` (`user_id`, `smartphone_id`) VALUES
-(1, 1),
-(1, 5),
-(2, 2),
-(3, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -169,17 +131,6 @@ CREATE TABLE IF NOT EXISTS `user_tv` (
   KEY `IDX_ABBBCEC1A76ED395` (`user_id`),
   KEY `IDX_ABBBCEC11D245270` (`tv_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Déchargement des données de la table `user_tv`
---
-
-INSERT INTO `user_tv` (`user_id`, `tv_id`) VALUES
-(1, 3),
-(2, 3),
-(2, 6),
-(3, 4),
-(3, 5);
 
 --
 -- Contraintes pour les tables déchargées

@@ -1,0 +1,1114 @@
+{
+  "info": {
+    "_postman_id": "922e009c-2269-4d77-a9af-f76e54ae7b9d",
+    "name": "TP_MediaMarkt",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56644003"
+  },
+  "item": [
+    {
+      "name": "Create User - Bond Nathalie",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"Bond\",\r\n    \"prenom\": \"Nathalie\",\r\n    \"adresse\": \"Rue de Londres n°7, 2000\",\r\n    \"argent\": 10000,\r\n    \"email\": \"nathalie@user.com\",\r\n    \"password\": \"$2y$13$NQUJK8DYwg2jHR609jcdhOof.WoZwkPQ6a0e4BVvCZfzj7QvS45c\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create User - Hart Kevin",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"Hart\",\r\n    \"prenom\": \"Kevin\",\r\n    \"adresse\": \"Avenue des Citiziens n°14, 3000\",\r\n    \"argent\": 10000,\r\n    \"email\": \"kevin@user.com\",\r\n    \"password\": \"$2y$13$UzXuhHeYZJCNSG/PbCNz/OCMRgpTbuPkr.cC1APuJTkITYzpRSYSm\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create User - Robbie Margot",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"Robbie\",\r\n    \"prenom\": \"Margot\",\r\n    \"adresse\": \"Chaussée de Barbies n°423, 2500\",\r\n    \"argent\": 10000,\r\n    \"email\": \"margot@user.com\",\r\n    \"password\": \"$2y$13$or1Vxs1huMaerTYCqoMg2OTJBs5FxMzXOfst/TI0eNxUXXbq5cx0u\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create TV - LG C1 55",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"LG C1\",\r\n    \"marque\": \"LG\",\r\n    \"description\": \"Téléviseur OLED 4K avec processeur α9 Gen4 AI, HDR10, Dolby Vision, 120Hz, compatible HDMI 2.1 pour le gaming.\",\r\n    \"annee\": 2021,\r\n    \"taille\": 55,\r\n    \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZD95Qn0XEkAIu_lqOjzbzpXF_6DDZxGiHBPR47Kovw&s\",\r\n    \"prix\": 1499,\r\n    \"stock\": 5\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create TV - Sony Bravia 55",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"Sony Bravia 8\",\r\n    \"marque\": \"Sony\",\r\n    \"description\": \"Téléviseur OLED 4K avec processeur XR, Dolby Vision, 120Hz, fonctions exclusives PlayStation 5, Google TV.\",\r\n    \"annee\": 2024,\r\n    \"taille\": 55,\r\n    \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0kSWmln7pAibsFmkwgYc1XLioSQtUNyJZj45ibndjbg&s=10\",\r\n    \"prix\": 1799,\r\n    \"stock\": 10\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Smartphones - iPhone 11 Pro Max",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"iPhone 11 Pro Max\",\r\n    \"marque\": \"Apple\",\r\n    \"description\": \"Écran Super Retina XDR 6,5 pouces, triple caméra 12MP, puce A13 Bionic, résistance à l'eau.\",\r\n    \"annee\": 2019,\r\n    \"duoCarteSim\": true,\r\n    \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTp8xcRi_0NV-M1z1bUP8AUfFbKEr5wm7TUMF3ncSHGg&s=10\",\r\n    \"prix\": 1159,\r\n    \"stock\": 5\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/smartphones",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "smartphones"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Smartphones - Galaxy S20+",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"Galaxy S20+\",\r\n    \"marque\": \"Samsung\",\r\n    \"description\": \"Écran AMOLED 6,7 pouces 120Hz, processeur Exynos 990, quadruple caméra, compatible 5G.\",\r\n    \"annee\": 2020,\r\n    \"duoCarteSim\": true,\r\n    \"image\": \"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ1noseuNW9I4ks1rUM0F1eIq2gLSxjU9n8Jcplpq3ONrnin0rsgNQQ1CABHi2kdJIgOurNraVDM85rJ50gafMhkCEnGxUYrwFLhVc78pwE5P-FBZSGpXqe-gn02o6rnD1HpheNenw&usqp=CAc\",\r\n    \"prix\": 1009,\r\n    \"stock\": 10\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/smartphones",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "smartphones"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Smartphones - Oppo Reno",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"Oppo Reno\",\r\n    \"marque\": \"Oppo\",\r\n    \"description\": \"Écran AMOLED 6,4 pouces, double caméra 48MP, Snapdragon 710, design mécanisme périscope.\",\r\n    \"annee\": 2019,\r\n    \"duoCarteSim\": true,\r\n    \"image\": \"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRZd3_AfLmOkBjJ8eiYDAhSGVKDQNIg4jmk4x3dl3tgaDVeShraWdzyk9GHSqPGrZ44ofi7T3--3WakqIqDaEPoNeWvJ89i9rHmK2S2ISveftRbkfjKSLlA&usqp=CAc\",\r\n    \"prix\": 449,\r\n    \"stock\": 7\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/smartphones",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "smartphones"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Smartphones - Nokia 3310",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"Nokia 3310\",\r\n    \"marque\": \"Nokia\",\r\n    \"description\": \"Téléphone classique réédité, écran 2,4 pouces, batterie longue durée (jusqu'à un mois en veille), jeu Snake intégré.\",\r\n    \"annee\": 2017,\r\n    \"duoCarteSim\": true,\r\n    \"image\": \"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQAZEkc3kEkcwCdx-EH-ZtPFvQWG7RBU0nXnB4Fpy5cro04HE0hZJA-iVJVh2PodbPsP_lwALq8LyHmb1qXXXtBrAcX-9e2hGYgP4gwFYEepWgNub1eJDR8bxqqJYA8vpoQeXavZ98Ra2E&usqp=CAc\",\r\n    \"prix\": 49.9,\r\n    \"stock\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/smartphones",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "smartphones"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Smartphones - One Plus Nord",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"OnePlus Nord\",\r\n    \"marque\": \"OnePlus\",\r\n    \"description\": \"Écran Super AMOLED 90Hz 6,44 pouces, Snapdragon 765G, quadruple caméra, charge rapide Warp Charge 30T.\",\r\n    \"annee\": 2020,\r\n    \"duoCarteSim\": true,\r\n    \"image\": \"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTVyiK9t9zlHbbJbR6NjOX016z4C_wC0BBiv4JL2R2cFXV9et-lviQas39mjvrbpOxDrNe_U-qxwQE0r32LuDQcVnsEfsUnzfvNFP4kiqcibVarSoMCyYBtT-GO-vM0RGeOjMADbAo&usqp=CAc\",\r\n    \"prix\": 399,\r\n    \"stock\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/smartphones",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "smartphones"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create TV- Philips Ambilight 65",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"Philips OLED910\",\r\n    \"marque\": \"Philips\",\r\n    \"description\": \"Téléviseur OLED 4K avec technologie Ambilight, système audio Bowers & Wilkins, compatible tous formats HDR.\",\r\n    \"annee\": 2025,\r\n    \"taille\": 65,\r\n    \"image\": \"https://www.electrodepot.be/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/P10014689.jpg\",\r\n    \"prix\": 1999,\r\n    \"stock\": 7\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create TV - Samsung QD-OLED 65",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"Samsung S95D\",\r\n    \"marque\": \"Samsung\",\r\n    \"description\": \"Téléviseur QD-OLED 4K anti-reflet (Glare Free), processeur NQ4 AI Gen2, Dolby Atmos, Motion Xcelerator 144Hz.\",\r\n    \"annee\": 2024,\r\n    \"taille\": 65,\r\n    \"image\": \"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSXT3rQzbzqJN3QY3fe_yb2Njd7UruSxQlFF2wjv3cZYsJDFp9yV78woCqpssAWaB9tEkEkioD8feMbSSb3OowM76HxCRuV09c6x3LtrlCNyGrlLadwl47zqDN3L_uvaQ&usqp=CAc\",\r\n    \"prix\": 2999,\r\n    \"stock\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create TV - Hisense QLED smart 43",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/ld+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"Hisense QD6\",\r\n    \"marque\": \"Hisense\",\r\n    \"description\": \"Téléviseur QLED 4K avec technologie Quantum Dot, Dolby Vision et Dolby Atmos, Fire TV intégré.\",\r\n    \"annee\": 2025,\r\n    \"taille\": 43,\r\n    \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQec_02XvjsHSbSn3I5YpYTHS-kaUI9zae0x_LCg8DK2A&s=10\",\r\n    \"prix\": 299,\r\n    \"stock\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "a) list_all_tvs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "b) list_all_smartphones",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"OnePlus Nord\",\r\n    \"marque\": \"OnePlus\",\r\n    \"description\": \"Écran Super AMOLED 90Hz 6,44 pouces, Snapdragon 765G, quadruple caméra, charge rapide Warp Charge 30T.\",\r\n    \"annee\": 2020,\r\n    \"duoCarteSim\": true,\r\n    \"image\": \"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTVyiK9t9zlHbbJbR6NjOX016z4C_wC0BBiv4JL2R2cFXV9et-lviQas39mjvrbpOxDrNe_U-qxwQE0r32LuDQcVnsEfsUnzfvNFP4kiqcibVarSoMCyYBtT-GO-vM0RGeOjMADbAo&usqp=CAc\",\r\n    \"prix\": 399,\r\n    \"stock\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/smartphones",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "smartphones"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "c) afficher user 3",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"OnePlus Nord\",\r\n    \"marque\": \"OnePlus\",\r\n    \"description\": \"Écran Super AMOLED 90Hz 6,44 pouces, Snapdragon 765G, quadruple caméra, charge rapide Warp Charge 30T.\",\r\n    \"annee\": 2020,\r\n    \"duoCarteSim\": true,\r\n    \"image\": \"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTVyiK9t9zlHbbJbR6NjOX016z4C_wC0BBiv4JL2R2cFXV9et-lviQas39mjvrbpOxDrNe_U-qxwQE0r32LuDQcVnsEfsUnzfvNFP4kiqcibVarSoMCyYBtT-GO-vM0RGeOjMADbAo&usqp=CAc\",\r\n    \"prix\": 399,\r\n    \"stock\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "d) Modifier Phillips taille+prix",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/merge-patch+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"taille\": 55,\r\n    \"prix\": 1399\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs/5",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "e) Modifier Samsung taille+prix",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/merge-patch+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"taille\": 77,\r\n    \"prix\": 4499\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs/6",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "f) Modifiez le nom de la LG C1",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/merge-patch+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"LG C2\",\r\n    \"description\": \"Téléviseur OLED evo 4K avec processeur α9 Gen5 AI, plus lumineux que le C1, HDR10, Dolby Vision, 120Hz, HDMI 2.1.\",\r\n    \"annee\": 2022,\r\n    \"prix\": 1799\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "g) supprimer nokia 3310",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/smartphones/4",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "smartphones",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "h) Changez User 1 en James",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/merge-patch+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"prenom\": \"James\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "i) Changez User 2 en DeBruyne",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/merge-patch+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nom\": \"DeBruyne\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users/2",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "j) James Bond achète, iPhone, One+, TV LG",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/merge-patch+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"smartphones\": [\"/api/smartphones/1\", \"/api/smartphones/5\"],\r\n    \"tvs\": [\"/api/tvs/3\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "k) Kevin achète Galaxy, LG, Samsung",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/merge-patch+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"smartphones\": [\"/api/smartphones/2\"],\r\n    \"tvs\": [\"/api/tvs/3\", \"/api/tvs/6\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users/2",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "l) Margot Robbie achète TV Phillips, iPhone, TV Sony",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/merge-patch+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"smartphones\": [\"/api/smartphones/1\"],\r\n    \"tvs\": [\"/api/tvs/5\", \"/api/tvs/4\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "m) Affichez User 1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "n) Affichez User 2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/users/2",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "users",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "o) Affichez iPhone",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/smartphones/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "smartphones",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "p) Affichez-moi la TV LG",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "q.1) supprimer TV",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tvs/7",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tvs",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "q.2) supprimer Smartphone",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/smartphones/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "smartphones",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
